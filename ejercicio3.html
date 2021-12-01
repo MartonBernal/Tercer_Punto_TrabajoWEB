@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio 3</title>
+<style>
+    table{
+        height: 700px;
+        width: 700px;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: auto;
+        border: 1px  solid black;
+    }
+    #header{
+        background-color: red;
+    }
+    h2{
+        text-align: center;
+    }
+    td#Columna1{
+        padding-top: 0px;
+        position: relative;
+        text-align: center;
+    }
+    td#Columna2{
+        padding-top: 0px;
+        position: relative;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <table> 
+        <tr id="header">
+            <td colspan="2">
+                <h2>Formulario usando table layout</h2>
+            </td>
+        </tr>
+        <tr>
+            <form action="">  
+                <td id="Columna1">
+                    <input type="number" placeholder="Ingrese un numero" minlength="1" maxlength="10" name="numero"><br><br>
+                    <input type="text" placeholder="Ingrese texto" minlength="1" maxlength="40" name="texto1"><br><br>
+                    <input type="text" placeholder="Ingrese texto" minlength="1" maxlength="40" name="texto2"><br><br><br>
+                    <textarea rows="3" minlength="1" maxlength="200" name="textarea">
+                        Escriba texto aquí...
+                    </textarea><br><br>
+                    <input type="date" placeholder="Ingrese una fecha" name="fecha"><br><br>
+                    <input type="time" placeholder="Ingrese la hora" name="hora"><br><br>
+                    <label>Seleccione la casilla:</label>
+                    <input type="checkbox" placeholder="Seleccione una casilla" name="checkbox"><br><br>
+                </td>
+                <td id="Columna2">
+                    <label>Selecciona una opción:</label><br>                   
+                    <input type="radio" value="Opción 1"  name="radio">Opción 1<br>
+                    <input type="radio" value="Opción 2"  name="radio">Opción 2<br>
+                    <input type="radio" value="Opción 3"  name="radio">Opción 3<br>
+                    <label>Seleccione un color: </label>
+                    <input type="color" name="color"><br><br>
+                    <label>Lista desplegable: </label>
+                    <select>
+                        <option>
+        
+                        </option>
+                    </select><br><br>
+                    <label>Seleccione una opcion: </label>
+                    <select>
+                        
+                        <option value="Opcion1">
+                            Opcion 1
+                        </option>
+                        <option value="Opcion2">
+                            Opcion 2
+                        </option>
+                        <option value="Opcion3">
+                            Opcion 3
+                        </option>
+                    </select><br><br>
+                    <input type="email" placeholder="Ingrese un email" name="correo"><br><br>
+                    <input type="text" placeholder="Ingrese texto" name="texto1"><br><br>
+                    <input type="submit" value="Enviar Datos" name="Enviar info">
+                </td>
+            </form>
+        </tr>
+    </table>   
+</body>
+</html>
